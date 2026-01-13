@@ -1,0 +1,15 @@
+db.attendance.find({
+  status: "absent",
+  date: {
+    $gte: ISODate("2020-10-15"),
+    $lte: ISODate("2020-10-31")
+  }
+})
+
+db.tasks.find({
+  submitted: false,
+  assigned_date: {
+    $gte: ISODate("2020-10-15"),
+    $lte: ISODate("2020-10-31")
+  }
+})

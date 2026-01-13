@@ -1,0 +1,4 @@
+db.company_drives.find(
+  { students_appeared: { $exists: true, $ne: [] } },
+  { company_name: 1, students_appeared: 1, _id: 0 }
+)

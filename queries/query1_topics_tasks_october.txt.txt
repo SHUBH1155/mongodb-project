@@ -1,0 +1,15 @@
+// Topics taught in October
+db.topics.find({
+  taught_date: {
+    $gte: ISODate("2020-10-01"),
+    $lte: ISODate("2020-10-31")
+  }
+})
+
+// Tasks assigned in October
+db.tasks.find({
+  assigned_date: {
+    $gte: ISODate("2020-10-01"),
+    $lte: ISODate("2020-10-31")
+  }
+})

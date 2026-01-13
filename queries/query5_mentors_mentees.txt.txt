@@ -1,0 +1,3 @@
+db.mentors.find({
+  mentees_count: { $gt: 15 }
+})
